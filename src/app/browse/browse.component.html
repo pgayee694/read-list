@@ -1,0 +1,7 @@
+<h3>Books</h3>
+<ul>
+  <li *ngFor="let book of books.books">
+    {{ book.title }} by
+    <p *ngFor="let author of book.authors">{{ author }}</p>
+  </li>
+</ul>
